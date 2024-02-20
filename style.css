@@ -3,14 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+.main-div{
     background-color: #e5e5fd;
     min-height: 100vh;
     border:10px solid #1d1e4c;
 }
 .content{
     max: width 900px; 
-    margin: 0 250px;
+    margin: 0 200px;
 }
 .top-section{
     margin-top: 100px;
@@ -62,4 +62,72 @@ footer{
 }
 footer p {
     text-align: end;
+}
+
+@media only screen and (max-width: 576px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .main-div{
+        background-color: #e5e5fd;
+        min-height: 100vh;
+        border: 5px solid #1d1e4c;
+    }
+    .content{
+        margin: 0 100px;
+    }
+    .top-section{
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .head-text h1{
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #1d1e4c;
+    }
+    .head-text h4{
+        font-size: 10px;
+        text-align: end;
+    }
+    .image-container,img{
+        border-radius: 50%;
+    width: 85px;
+    height: 100px;
+    }
+    .about-section h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+    .about-section p{
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 1.2px;
+        margin-bottom: 8px;
+        text-align: justify;
+    }
+    .biography-section h3{
+        font-size:12px;
+        font-weight: 200;
+        margin-bottom: 8px;
+    }
+    .biography-section ul{
+        margin-left: 15px;
+        font-size: 8px;
+        line-height: 10px;
+        letter-spacing: 1px;
+    }
+    footer{
+        margin: 20px 0;
+    }
+    footer p {
+        text-align: end;
+        font-size: 10px;
+    }
 }
